@@ -263,9 +263,9 @@
                                 <field name="incoterm_id"/>
                             </group>
                             <group name="other_info">
-                                <field name="user_sol" attrs="{'readonly':[('state', 'not in', 'borrador compra')],'required': [('state', '=', 'borrador compra')]}"/>
-                                <field name="area_sol" attrs="{'readonly':[('state', 'not in', 'borrador compra')],'required': [('state', '=', 'borrador compra')]}"/>
-                                <field name="date_sol" attrs="{'readonly':[('state', 'not in', 'borrador compra')],'required': [('state', '=', 'borrador compra')]}"/>
+                                <field name="user_sol" attrs="{'readonly':[('state', 'not in', 'borrador compra')]"/>
+                                <field name="area_sol" attrs="{'readonly':[('state', 'not in', 'borrador compra')]"/>
+                                <field name="date_sol" attrs="{'readonly':[('state', 'not in', 'borrador compra')]"/>
                                 <field name="user_id"/>
                                 <field name="invoice_status" attrs="{'invisible': [('state', 'in', ('draft', 'sent', 'to approve', 'cancel'))]}"/>
                                 <field name="payment_term_id" attrs="{'readonly': ['|', ('invoice_status','=', 'invoiced'), ('state', '=', 'done')]}" options="{'no_create': True}"/>
